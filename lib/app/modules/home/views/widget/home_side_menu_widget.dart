@@ -1,3 +1,4 @@
+import 'package:exercise_dirbbox_flutter/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -81,6 +82,9 @@ class HomeSideMenuWidget extends StatelessWidget {
             child: Column(
               children: [
                 ListTile(
+                  onTap: () {
+                    Get.back();
+                  },
                   title: Text(
                     "Home",
                     style: TextStyle(
@@ -91,6 +95,9 @@ class HomeSideMenuWidget extends StatelessWidget {
                   ),
                 ),
                 ListTile(
+                  onTap: () {
+                    Get.toNamed(Routes.PROFILE);
+                  },
                   title: Text(
                     "Profile",
                     style: TextStyle(
@@ -101,6 +108,9 @@ class HomeSideMenuWidget extends StatelessWidget {
                   ),
                 ),
                 ListTile(
+                  onTap: () {
+                    Get.toNamed(Routes.STORAGE);
+                  },
                   title: Text(
                     "Storage",
                     style: TextStyle(
@@ -131,6 +141,9 @@ class HomeSideMenuWidget extends StatelessWidget {
                   ),
                 ),
                 ListTile(
+                  onTap: () {
+                    Get.toNamed(Routes.SETTING);
+                  },
                   title: Text(
                     "Settings",
                     style: TextStyle(

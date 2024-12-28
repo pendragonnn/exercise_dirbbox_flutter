@@ -1,5 +1,6 @@
 import 'dart:ffi';
 
+import 'package:exercise_dirbbox_flutter/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -12,7 +13,12 @@ class SettingView extends GetView<SettingController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Image.asset("assets/icons/setting_back_icon.png"),
+        leading: GestureDetector(
+          onTap: () {
+            Get.back();
+          },
+          child: Image.asset("assets/icons/setting_back_icon.png"),
+        ),
       ),
       body: ListView(
         padding: EdgeInsets.symmetric(horizontal: 30.0),
@@ -45,6 +51,9 @@ class SettingView extends GetView<SettingController> {
                 ),
               ),
               ListTile(
+                onTap: () {
+                  Get.toNamed(Routes.CHANGE_PASSWORD);
+                },
                 contentPadding: EdgeInsets.only(
                   bottom: 20,
                 ),

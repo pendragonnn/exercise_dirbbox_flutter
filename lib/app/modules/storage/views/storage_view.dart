@@ -13,7 +13,11 @@ class StorageView extends GetView<StorageController> {
     return Scaffold(
       backgroundColor: Color(0xfff1f1f1),
       appBar: AppBar(
-        leading: Image.asset("assets/icons/profile_back_icon.png"),
+        leading: GestureDetector(
+            onTap: () {
+              Get.back();
+            },
+            child: Image.asset("assets/icons/profile_back_icon.png")),
         title: const Text(
           'Storage Details',
           style: TextStyle(

@@ -10,7 +10,12 @@ class ChangePasswordView extends GetView<ChangePasswordController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Image.asset("assets/icons/setting_back_icon.png"),
+        leading: GestureDetector(
+          onTap: () {
+            Get.back();
+          },
+          child: Image.asset("assets/icons/setting_back_icon.png"),
+        ),
       ),
       body: ListView(
         padding: EdgeInsets.symmetric(horizontal: 30.0),
