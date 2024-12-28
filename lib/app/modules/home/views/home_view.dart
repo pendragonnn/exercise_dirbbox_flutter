@@ -81,13 +81,13 @@ class HomeView extends GetView<HomeController> {
                     width: 7,
                   ),
                   Expanded(
-                    child: TextField(
+                    child: TextFormField(
                       autocorrect: false,
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         enabledBorder: InputBorder.none,
                         focusedBorder: InputBorder.none,
-                        labelText: "Search Folder",
+                        hintText: "Search Folder",
                       ),
                     ),
                   ),
