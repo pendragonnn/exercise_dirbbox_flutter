@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomeSideMenuWidget extends StatelessWidget {
   @override
@@ -66,7 +67,7 @@ class HomeSideMenuWidget extends StatelessWidget {
                 padding: const EdgeInsets.only(right: 30.0),
                 child: GestureDetector(
                     onTap: () {
-                      
+                      Get.back();
                     },
                     child: Image.asset("assets/icons/side_menu_icon.png")),
               ),

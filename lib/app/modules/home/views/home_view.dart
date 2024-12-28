@@ -43,7 +43,11 @@ class HomeView extends GetView<HomeController> {
             ),
             child: GestureDetector(
               onTap: () {
-                Navigator.of(context).pop();
+                showModalBottomSheet(
+                  context: context,
+                  isScrollControlled: true, 
+                  builder: (context) => HomeSideMenuWidget(),
+                );
               },
               child: Image.asset(
                 "assets/icons/home_menu_icon.png",
