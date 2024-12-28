@@ -11,7 +11,7 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xfff1f1f1),
+      backgroundColor: Colors.white,
       floatingActionButton: Container(
         height: 60,
         width: 60,
@@ -35,7 +35,7 @@ class HomeView extends GetView<HomeController> {
             ),
           ),
         ),
-        backgroundColor: Color(0xfff1f1f1),
+        backgroundColor: Colors.white,
         actions: [
           Padding(
             padding: const EdgeInsets.only(
@@ -45,7 +45,7 @@ class HomeView extends GetView<HomeController> {
               onTap: () {
                 showModalBottomSheet(
                   context: context,
-                  isScrollControlled: true, 
+                  isScrollControlled: true,
                   builder: (context) => HomeSideMenuWidget(),
                 );
               },

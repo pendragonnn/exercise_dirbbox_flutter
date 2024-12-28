@@ -12,9 +12,9 @@ class SettingView extends GetView<SettingController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xfff1f1f1),
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Color(0xfff1f1f1),
+        backgroundColor: Colors.white,
         leading: GestureDetector(
           onTap: () {
             Get.back();

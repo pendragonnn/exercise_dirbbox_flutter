@@ -10,7 +10,7 @@ class ProfileView extends GetView<ProfileController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xfff1f1f1),
+      backgroundColor: Colors.white,
       appBar: AppBar(
         leading: GestureDetector(
           onTap: () {
@@ -25,7 +25,7 @@ class ProfileView extends GetView<ProfileController> {
           ),
         ),
         centerTitle: true,
-        backgroundColor: Color(0xfff1f1f1),
+        backgroundColor: Colors.white,
         actions: [
           Padding(
             padding: const EdgeInsets.only(

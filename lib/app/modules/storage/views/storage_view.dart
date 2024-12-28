@@ -11,7 +11,7 @@ class StorageView extends GetView<StorageController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xfff1f1f1),
+      backgroundColor: Colors.white,
       appBar: AppBar(
         leading: GestureDetector(
             onTap: () {
@@ -25,7 +25,7 @@ class StorageView extends GetView<StorageController> {
           ),
         ),
         centerTitle: true,
-        backgroundColor: Color(0xfff1f1f1),
+        backgroundColor: Colors.white,
         actions: [
           Padding(
             padding: const EdgeInsets.only(
